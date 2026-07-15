@@ -1,0 +1,36 @@
+{
+  "login": {
+    "admin": {
+      "username": "admin@example.com",
+      "password": "Admin@123"
+    },
+    "student": {
+      "username": "student@example.com",
+      "password": "Student@123"
+    }
+  },
+  "pagination": {
+    "expected_records_per_page": 10,
+    "page_numbers": [1, 2, 3]
+  },
+  "sorting": {
+    "ascending": true,
+    "descending": true
+  },
+  "calendar": {
+    "future_days_ahead": 5,
+    "past_days_behind": 5
+  },
+  "student": {
+    "student_id": "STU-1001",
+    "student_name": "John Doe"
+  },
+  "cart": {
+    "quantity": 2,
+    "tax_rate": 0.18
+  },
+  "api": {
+    "endpoint": "/students",
+    "expected_fields": ["id", "name", "email"]
+  }
+}
