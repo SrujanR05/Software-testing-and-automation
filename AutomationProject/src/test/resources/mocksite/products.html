@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Catalog - TestSandbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">TestSandbox</a>
+        <ul class="navbar-nav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+            <li><a href="register.html" class="nav-link">Register</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="cart.html" class="nav-link">Cart</a></li>
+            <li><a href="upload.html" class="nav-link">Upload & Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Products Catalog</h1>
+        <p class="page-subtitle">Filter the products list by categories and price range, and add items to your cart.</p>
+
+        <div class="shop-layout">
+            <!-- Sidebar Filters -->
+            <aside class="filters-sidebar">
+                <div class="filter-section">
+                    <h3 class="filter-title">Filter by Category</h3>
+                    <label class="filter-option">
+                        <input type="checkbox" class="category-filter" value="Electronics" id="cat-electronics">
+                        <span>Electronics</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="category-filter" value="Clothing" id="cat-clothing">
+                        <span>Clothing</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="category-filter" value="Books" id="cat-books">
+                        <span>Books</span>
+                    </label>
+                </div>
+
+                <div class="filter-section">
+                    <h3 class="filter-title">Price Range ($)</h3>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <input type="number" id="min-price" class="form-control" placeholder="Min" min="0" value="0">
+                        <span style="color: var(--text-muted);">to</span>
+                        <input type="number" id="max-price" class="form-control" placeholder="Max" min="0" value="1500">
+                    </div>
+                </div>
+
+                <button id="filter-btn" class="btn">Apply Filters</button>
+            </aside>
+
+            <!-- Products Listing Grid -->
+            <main>
+                <div id="products-grid" class="products-grid">
+                    <!-- Products dynamically rendered by JS -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

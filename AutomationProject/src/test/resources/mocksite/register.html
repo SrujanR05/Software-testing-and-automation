@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TestSandbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">TestSandbox</a>
+        <ul class="navbar-nav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+            <li><a href="register.html" class="nav-link">Register</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="cart.html" class="nav-link">Cart</a></li>
+            <li><a href="upload.html" class="nav-link">Upload & Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Register Account</h1>
+        <p class="page-subtitle">Create a new user account and test interactive email validations.</p>
+
+        <div class="card">
+            <form id="reg-form" novalidate>
+                <div class="form-group">
+                    <label for="first-name" class="form-label">First Name *</label>
+                    <input type="text" id="first-name" class="form-control" placeholder="John" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name" class="form-label">Last Name *</label>
+                    <input type="text" id="last-name" class="form-control" placeholder="Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-email" class="form-label">Email Address *</label>
+                    <input type="email" id="reg-email" class="form-control" placeholder="john.doe@example.com" required>
+                    <span id="email-error-msg" class="error-feedback"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password" class="form-label">Password *</label>
+                    <input type="password" id="reg-password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password" class="form-label">Confirm Password *</label>
+                    <input type="password" id="confirm-password" class="form-control" placeholder="••••••••" required>
+                    <span id="pass-error-msg" class="error-feedback"></span>
+                </div>
+
+                <button type="submit" id="register-btn" class="btn">Register Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

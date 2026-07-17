@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - TestSandbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">TestSandbox</a>
+        <ul class="navbar-nav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+            <li><a href="register.html" class="nav-link">Register</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="cart.html" class="nav-link">Cart</a></li>
+            <li><a href="upload.html" class="nav-link">Upload & Download</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Shopping Cart</h1>
+        <p class="page-subtitle">Manage your selected items, modify quantities, and review prices.</p>
+
+        <div class="card cart-card">
+            <!-- List of Cart Items -->
+            <div id="cart-items-list" class="cart-items-list">
+                <!-- Cart items rendered by JS -->
+            </div>
+
+            <!-- Cart Totals calculation -->
+            <div class="cart-totals">
+                <div class="total-row">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="total-row">
+                    <span>Tax (10%):</span>
+                    <span id="cart-tax">$0.00</span>
+                </div>
+                <div class="total-row grand-total">
+                    <span>Grand Total:</span>
+                    <span id="cart-grandtotal">$0.00</span>
+                </div>
+            </div>
+
+            <button class="btn" style="margin-top: 1.5rem; background-color: var(--success-color);" onclick="alert('Checkout integration simulated!')">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
